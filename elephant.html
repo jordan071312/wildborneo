@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/animals.css">
+    <link rel="stylesheet" href="css/slideshow.css">
     <link rel="icon" type="image/x-icon" href="img/icon.png">
     <title> Elephants</title>
 </head>
@@ -106,6 +107,75 @@
             </div>
         </div>
         </div>
+    </section>
+
+        <!--Gallery-->
+    <section class="animal-gallery-container">
+        <!--image with number text-->
+        <div class="slides">
+            <div class="numbertext">1 / 6</div>
+            <img src="img/elephants.jpg" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">2 / 6</div>
+            <img src="img/elephant2.jpg" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">3 / 6</div>
+            <img src="img/elephant3.jpg" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">4 / 6</div>
+            <img src="img/elephant5.jpg" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">5 / 6</div>
+            <img src="img/elephant_area.png" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">6 / 6</div>
+            <img src="img/elephant6.jpg" alt="">
+        </div>
+
+        <!--next//prev-->
+        <a class="prev" onclick="[plusSlides(-1)]">&#10094;</a>
+        <a class="next" onclick="[plusSlides(1)]">&#10095;</a>
+
+        <!-- Image text -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail images -->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="img/elephants.jpg" style="width:100%" onclick="currentSlide(1)"
+                    alt="Mother elephant with its calf">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/elephant2.jpg" style="width:100%" onclick="currentSlide(2)"
+                    alt="Herd of Elephnats">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/elephant3.jpg" style="width:100%" onclick="currentSlide(3)"
+                    alt="Mother elephant with its calf">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/elephant5.jpg" style="width:100%" onclick="currentSlide(4)"
+                    alt="Malayan CIvet on a tree">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/elephant_area.png" style="width:100%" onclick="currentSlide(5)" alt="Bornean elephant range
+                (Orange - former range,
+                Red - recent range)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/elephant6.jpg" style="width:100%" onclick="currentSlide(6)"
+                    alt="A close-up of the face of an elephant near Kinabatangan River, Sukau, Sabah, Malaysia">
+            </div>
+        </div>
+        </div>
+        <script src="slideshow.js"></script>
     </section>
     <footer>
         © 2025 Project WildBorneo | ICT AUMS UT0012 2025

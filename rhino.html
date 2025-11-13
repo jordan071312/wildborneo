@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/animals.css">
+    <link rel="stylesheet" href="css/slideshow.css">
     <link rel="icon" type="image/x-icon" href="img/icon.png">
     <title>Rhinoceros</title>
 </head>
@@ -105,6 +106,73 @@
             </div>
         </div>
         </div>
+    </section>
+            <!--Gallery-->
+    <section class="animal-gallery-container">
+        <!--image with number text-->
+        <div class="slides">
+            <div class="numbertext">1 / 6</div>
+            <img src="img/rhino.jpg" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">2 / 6</div>
+            <img src="img/rhino2.JPG" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">3 / 6</div>
+            <img src="img/rhino3.jpg" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">4 / 6</div>
+            <img src="img/rhino_area.png" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">5 / 6</div>
+            <img src="img/rhino5.avif" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">6 / 6</div>
+            <img src="img/rhino6.jpg" alt="">
+        </div>
+
+        <!--next//prev-->
+        <a class="prev" onclick="[plusSlides(-1)]">&#10094;</a>
+        <a class="next" onclick="[plusSlides(1)]">&#10095;</a>
+
+        <!-- Image text -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail images -->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="img/rhino.jpg" style="width:100%" onclick="currentSlide(1)"
+                    alt="Sumatran Rhinoceros">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/rhino2.JPG" style="width:100%" onclick="currentSlide(2)"
+                    alt="SPotting of Bornean(Sumatran) Rhino in Kalimantan, Indonesia">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/rhino3.jpg" style="width:100%" onclick="currentSlide(3)"
+                    alt="Mother Rhino with its calf">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/rhino_area.png" style="width:100%" onclick="currentSlide(4)"
+                    alt="Sumatran Rhino range (Orange: historic ; Red: current)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/rhino5.avif" style="width:100%" onclick="currentSlide(5)"
+                    alt="Preserved carcass of the last male Bornean Rhino in Malaysia">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/rhino6.jpg" style="width:100%" onclick="currentSlide(6)"
+                    alt="Skull structure of Bornean Rhino">
+            </div>
+        </div>
+        </div>
+        <script src="slideshow.js"></script>
     </section>
     <footer>
         © 2025 Project WildBorneo | ICT AUMS UT0012 2025

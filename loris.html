@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/animals.css">
+    <link rel="stylesheet" href="css/slideshow.css">
     <link rel="icon" type="image/x-icon" href="img/icon.png">
     <title>Loris</title>
 </head>
@@ -101,6 +102,64 @@
             </div>
         </div>
         </div>
+    </section>
+        <!--Gallery-->
+    <section class="animal-gallery-container">
+        <!--image with number text-->
+        <div class="slides">
+            <div class="numbertext">1 / 5</div>
+            <img src="img/loris.jpg" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">2 / 5</div>
+            <img src="img/loris2.jpg" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">3 / 5</div>
+            <img src="img/loris3.jpg" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">4 / 5</div>
+            <img src="img/loris4.jpg" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">5 / 5</div>
+            <img src="img/loris5.jpg" alt="">
+        </div>
+
+        <!--next//prev-->
+        <a class="prev" onclick="[plusSlides(-1)]">&#10094;</a>
+        <a class="next" onclick="[plusSlides(1)]">&#10095;</a>
+
+        <!-- Image text -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail images -->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="img/loris.jpg" style="width:100%" onclick="currentSlide(1)"
+                    alt="Bornean Slow Loris">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/loris2.jpg" style="width:100%" onclick="currentSlide(2)"
+                    alt="">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/loris3.JPG" style="width:100%" onclick="currentSlide(3)"
+                    alt="Captured female SLow Loris">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/loris4.jpg" style="width:100%" onclick="currentSlide(4)"
+                    alt="Taxidermied Bornean Slow Loris for exhibition">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/loris5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Radio collared Bornean SLow Loris">
+            </div>
+        </div>
+        </div>
+        <script src="slideshow.js"></script>
     </section>
     <footer>
         © 2025 Project WildBorneo | ICT AUMS UT0012 2025

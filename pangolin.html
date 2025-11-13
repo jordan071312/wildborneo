@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/animals.css">
+    <link rel="stylesheet" href="css/slideshow.css">
     <link rel="icon" type="image/x-icon" href="img/icon.png">
     <title>Pangolin</title>
 </head>
@@ -103,6 +104,73 @@
             </div>
         </div>
         </div>
+    </section>
+    <!--Gallery-->
+    <section class="animal-gallery-container">
+        <!--image with number text-->
+        <div class="slides">
+            <div class="numbertext">1 / 6</div>
+            <img src="img/pangolin.jpg" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">2 / 6</div>
+            <img src="img/pangolin2.jpg" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">3 / 6</div>
+            <img src="img/pangolin_area.png" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">4 / 6</div>
+            <img src="img/pangolin4.jpg" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">5 / 6</div>
+            <img src="img/pangolin5.png" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">6 / 6</div>
+            <img src="img/pangolin6.jpg" alt="">
+        </div>
+
+        <!--next//prev-->
+        <a class="prev" onclick="[plusSlides(-1)]">&#10094;</a>
+        <a class="next" onclick="[plusSlides(1)]">&#10095;</a>
+
+        <!-- Image text -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail images -->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="img/pangolin.jpg" style="width:100%" onclick="currentSlide(1)"
+                    alt="Pangolin curling on a tree">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/pangolin2.jpg" style="width:100%" onclick="currentSlide(2)"
+                    alt="Sunda pangolin in the wild">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/pangolin_area.png" style="width:100%" onclick="currentSlide(3)"
+                    alt="Sunda Pangolin range">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/pangolin4.jpg" style="width:100%" onclick="currentSlide(4)"
+                    alt="Pangolin climbing a palm tree">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/pangolin5.png" style="width:100%" onclick="currentSlide(5)"
+                    alt="Taxidermied Sunda Pangolin for exhibition">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/pangolin6.jpg" style="width:100%" onclick="currentSlide(6)"
+                    alt="Sunda Pangolin caught on camera trap in laos">
+            </div>
+        </div>
+        </div>
+        <script src="slideshow.js"></script>
     </section>
     <footer>
         © 2025 Project WildBorneo | ICT AUMS UT0012 2025

@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animals.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com">
-    <link rel="icon" type="image/x-icon" href="/img/icon.png">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
     <title> Civets</title>
 </head>
 
@@ -100,6 +101,75 @@
                 </div>
             </div>
     </div>
+    </section>
+
+    <!--Gallery-->
+    <section class="animal-gallery-container">
+        <!--image with number text-->
+        <div class="slides">
+            <div class="numbertext">1 / 6</div>
+            <img src="img/civet.jpg" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">2 / 6</div>
+            <img src="img/civet2.jpg" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">3 / 6</div>
+            <img src="img/civet3.jpg" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">4 / 6</div>
+            <img src="img/civet4.jpg" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">5 / 6</div>
+            <img src="img/civet_area.png" alt="">
+        </div>
+        <div class="slides">
+            <div class="numbertext">6 / 6</div>
+            <img src="img/civet6.jpg" alt="">
+        </div>
+
+        <!--next//prev-->
+        <a class="prev" onclick="[plusSlides(-1)]">&#10094;</a>
+        <a class="next" onclick="[plusSlides(1)]">&#10095;</a>
+
+        <!-- Image text -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail images -->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="img/civet.jpg" style="width:100%" onclick="currentSlide(1)"
+                    alt="Civet on its two hind legs">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/civet2.jpg" style="width:100%" onclick="currentSlide(2)"
+                    alt="Malayan Civet in the wild, foraging">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/civet3.jpg" style="width:100%" onclick="currentSlide(3)"
+                    alt="Taxidermied Malayan civet at Philippine National Museum">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/civet4.jpg" style="width:100%" onclick="currentSlide(4)"
+                    alt="Malayan CIvet on a tree">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/civet_area.png" style="width:100%" onclick="currentSlide(5)" alt="Malayan civet range
+                (dark green - extant,
+                light green - probably extant)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/civet6.jpg" style="width:100%" onclick="currentSlide(6)"
+                    alt="Camera trap of Malayan Civet in the wild">
+            </div>
+        </div>
+        </div>
+        <script src="slideshow.js"></script>
     </section>
     <footer>
         © 2025 Project WildBorneo | ICT AUMS UT0012 2025
